@@ -1,0 +1,131 @@
+/* Google Font OutFit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&display=swap');
+/* Google Font Josefin */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600;700&display=swap');
+
+
+#root{
+  background-color: #090316 ;
+  color: #f5f2fd;
+  --ascent:#92176d;
+  --primary: #791792;
+  --secondary: #23061a;
+  --backg:#090316;
+  --text:#f5f2fd;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 100dvh;
+  max-width: 100dvw;
+}
+html{
+  overflow-x: hidden !important;
+  max-width: 100dvw;
+}
+
+#home-page-span{
+    position: relative;
+}
+
+#home-page-span::before{
+  content: "Exceptional";
+  color: #a437ad ;
+  animation: words 20s infinite;
+}
+
+#home-page-span::after{
+  content: '';
+  background-color: #090316;
+  position: absolute;
+  width: calc(100% );
+  height: 100%;
+  border-left: #a437ad solid 3px;
+  right: 0;
+  animation: cursor .6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left:  3px solid #a437ad; 
+  }
+}
+
+@keyframes words{
+  0%, 20%{
+    content: 'Exceptional';
+  }
+  21%, 40%{
+    content: 'Extraordinary';
+  }
+  41%, 60%{
+    content: 'Excellent';
+  }
+  61%, 80%{
+    content: 'Remarkable';
+  }
+  81%, 100%{
+    content: 'Outstanding';
+  }
+}
+
+@keyframes typing{
+  10% , 15%, 30%, 35%, 50%, 55%, 70%, 90%, 95%{
+    width: 0;
+  }
+
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 8px);
+  }
+
+}
+
+.bg-glass{
+  background: linear-gradient(to right, #fff4, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.text-justify{
+  text-align: justify;
+  color:#f5f2fd
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.card:hover{
+  transform: scale(2);
+  /* background-image: linear-gradient(45deg, #d4045044, #ea3b7b22); */
+  box-shadow: 0px 0px 20px 3px rgba(212,4,80,1);
+}
+
+
+
+
+
+.card-img-top{
+  width: 50% !important;
+}
+
+.CircularProgressbar-path {
+  stroke: #92176d !important;
+}
+.CircularProgressbar-trail {
+  stroke: var(--secondary) !important;
+}
+.CircularProgressbar-text {
+  fill: var(--text)!important;
+}
