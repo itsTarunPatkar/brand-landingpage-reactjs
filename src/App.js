@@ -3,6 +3,7 @@ import Home from './Components/Home'
 import Aboutus from './Components/Aboutus';
 import Services from './Components/Services';
 import ContactUs from './Components/ContactUs';
+import Copyright from './Components/Copyright';
 import FAQ from './Components/FAQ'
 import Aos from 'aos';
 
@@ -18,6 +19,7 @@ function App() {
       <Services/>
       <FAQ/>
       <ContactUs/>
+      <Copyright/>
     </>
   );
 }
