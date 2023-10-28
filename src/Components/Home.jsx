@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <div className="headeranimation " style={{opacity: '0.5'}}>
       <Player
+       className='headanimation'
         autoplay
         loop
         src={headAni}
@@ -16,10 +17,10 @@ export default function Home() {
       >
       </Player>
       </div>
-      <Container className='d-md-flex align-items-center justify-content-center pt-1 mt-md-0 min-height: 74dvh;' style={{ minHeight: '100dvh', gap:'30px' }}>
+      <Container  className='d-md-flex align-items-center justify-content-center pt-3 ;' style={{ gap:'30px' }}>
 
-        <Row className=' text-white fw-bold text-center'>
-          <div className="display-4 fw-bold" style={{zIndex:1}}>
+        <Row id='heading' className=' text-white fw-bold text-center'>
+          <div  className="display-4 fw-bold" style={{zIndex:1}}>
             Committed to <span id='home-page-span'  style={{ color: 'hsla(295, 42%, 54%, 1)' }}></span> service and ongoing support for all
           </div>
           <p className='fs-4 mt-5'>

@@ -89,6 +89,15 @@ html{
 
 }
 
+
+@media only screen and (min-width: 480px) {
+  
+  #heading{
+    margin-top: 22px;
+
+  }
+}
+
 .bg-glass{
   background: linear-gradient(to right, #fff4, transparent);
   backdrop-filter: blur(10px);
